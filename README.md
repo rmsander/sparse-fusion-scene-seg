@@ -2,6 +2,8 @@
 ## Overview
 This repository contains Jupyter notebooks and Python files for sparse data fusion for semantic segmentation of lidar point clouds fused with co-registered RGB imagery.  This work was implemented using PyTorch and [PointNet++](https://github.com/charlesq34/pointnet2), a framework that extends the capabilities of the original PointNet DCNN framework through the use of multi-scale feature analysis.  The dataset we chose to analyze for this project was Audi's [A2D2](https://www.audi-electronics-venture.de/aev/web/en/driving-dataset/dataset.html), which contains over 40000 scenes taken from an autonomous vehicle.  Each scene contains 3D xyz point cloud data (lidar), as well as 2D RGB data, semantically-segmented 2D ground truth data, and a mapping between 3D point space and 2D RGB space.
 
+My final report for this project can be found under [report.pdf](https://github.com/rmsander/sparse-fusion-scene-seg/blob/master/report.pdf).
+
  ## Environment Installation
  An Anaconda environment was used for this project.  To set up the conda environment, you can do so with the following bash command:
  
@@ -20,19 +22,30 @@ This repository contains Jupyter notebooks and Python files for sparse data fusi
  The Jupyter notebooks and Python files in this repository can be used to pre-process this dataset, create different datasets, and train and test neural network frameworks for determining the capabilities of PointNet++ in the task of using xyz-RGB data for semantic segmentation.  
  
 ### Jupyter Notebooks for Remote Development
-The Jupyter notebooks may be especially helpful for remote development.  They primarily contain code for pre-processing the dataset, creating variants of the dataset, and creating Python objects for PyTorch Datasets and DataLoaders.  These notebooks were written for use for the A2D2 dataset, but the methods and code blocks contained within these notebooks may be extendable to different datasets/different applications of the A2D2 dataset as well.
+The Jupyter notebooks may be especially helpful for remote development.  They primarily contain code for pre-processing the dataset, creating variants of the dataset, and creating Python objects for PyTorch Datasets and DataLoaders.  These notebooks were written for use for the A2D2 dataset, but the methods and code blocks contained within these notebooks may be extendable to different datasets/different applications of the A2D2 dataset as well.  The main Jupyter notebooks for this project, for pre-processing data and creating useful datasets, are:
+
+1. `audi_dataset_pre_processing.ipynb`
+2. `setup_training.ipynb`
 
 ### Python Files for Screen Sessions
-Some of the Jupyter notebooks used in this repository were also converted into Python files, namely 
+Some of the Jupyter notebooks used in this repository were also converted into Python files:
 
-< INSERT HERE>
+1. `audi_dataset_pre_processing.py`
+2. `create_partitioned_dataset.py`
+3. `neural_net_testing.py`
+
 
 This proved useful for running code for extended durations, in which hyper-parameters had to be changed.
 
 ### Training, Testing, and Model Code
-Code for training, testing, and the PointNet++ model can be found in the PointNet2 directory in this repository.  
- 
+Code for training, testing, and the PointNet++ model can be found in the `PointNet2/` directory in this repository.  Most of the files in this framework are from [Charles Qi's PointNet++ PyTorch implementaton](https://github.com/charlesq34/pointnet2), with the following file additions:
 
+1. `pad_collate_fn.py` (Contains code for my "Resample Via Padding" custom collation function for batched training.)
+2. `train_semseg-focal_loss.py` (Training code with focal loss.)
+3. `train_semseg-transfer_learning.py` (Training code with self-incremental transfer learning.)
+4. `data_utils/A2D2DataLoader.py` (PyTorch DataLoader class for interfacing with A2D2 dataset.)
  
+## Acknowledgements
+Thank you to the 6.869 team at MIT for providing me with crucial guidance and AWS resources for this project, the Audi Electronics Venture Group for open access to the A2D2 dataset, and to Charles Qi for providing open access to the PointNet++ architecture.
  
 
