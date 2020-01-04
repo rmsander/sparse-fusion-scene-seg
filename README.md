@@ -19,6 +19,19 @@ This repository contains Jupyter notebooks and Python files for sparse data fusi
  ## Usage 
  The Jupyter notebooks and Python files in this repository can be used to pre-process this dataset, create different datasets, and train and test neural network frameworks for determining the capabilities of PointNet++ in the task of using xyz-RGB data for semantic segmentation.  
  
+### Jupyter Notebooks for Remote Development
+The Jupyter notebooks may be especially helpful for remote development.  They primarily contain code for pre-processing the dataset, creating variants of the dataset, and creating Python objects for PyTorch Datasets and DataLoaders.  These notebooks were written for use for the A2D2 dataset, but the methods and code blocks contained within these notebooks may be extendable to different datasets/different applications of the A2D2 dataset as well.
+
+### Python Files for Screen Sessions
+Some of the Jupyter notebooks used in this repository were also converted into Python files, namely 
+
+< INSERT HERE>
+
+This proved useful for running code for extended durations, in which hyper-parameters had to be changed.
+
+### Training, Testing, and Model Code
+Code for training, testing, and the PointNet++ model can be found in the PointNet2 directory in this repository.  
+ 
 
  
  
