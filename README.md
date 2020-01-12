@@ -5,7 +5,7 @@ This repository contains Jupyter notebooks and Python files for sparse data fusi
 My final report for this project can be found under [report.pdf](https://github.com/rmsander/sparse-fusion-scene-seg/blob/master/report.pdf).
 
 ## Block Diagram for Inference
-[block diagram](https://github.com/rmsander/sparse-fusion-scene-seg/blob/master/images_readme/block_diagram.png)
+![block diagram](https://github.com/rmsander/sparse-fusion-scene-seg/blob/master/images_readme/block_diagram.png)
 
  ## Environment Installation
  An Anaconda environment was used for this project.  To set up the conda environment, you can do so with the following bash command:
