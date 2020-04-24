@@ -13,7 +13,7 @@ fuser -k 9999/tcp
 ssh -i <ami_key>.pem -NfL 9999:localhost:8888 <remote_user>@<remote_host>
 
 
-# ssh into AWS instance
+# ssh into AWS instance - for ubuntu instances, use 'ubuntu@<remote_host>', and for AWS instances, use 'ec2-user@<remote_host>'
 ssh -i <ami_key>.pem <remote_user>@<remote_host>
 
 
