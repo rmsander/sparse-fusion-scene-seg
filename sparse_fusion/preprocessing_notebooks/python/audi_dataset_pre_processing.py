@@ -323,12 +323,12 @@ def test():
                                       "cam_front_center")
         ind_pc_dir = os.path.join(ind_data_dir, "lidar", "cam_front_center")
 
-        pc_file_name = ID_split[0] + "_lidar_frontcenter_" + ID_split[
-            1] + ".npz"
-        label_file_name = ID_split[0] + "_label_frontcenter_" + ID_split[
-            1] + ".png"
-        camera_file_name = ID_split[0] + "_camera_frontcenter_" + ID_split[
-            1] + ".png"
+        pc_file_name = ID_split[0] + "_lidar_frontcenter_" + \
+                       ID_split[1] + ".npz"
+        label_file_name = ID_split[0] + "_label_frontcenter_" + \
+                          ID_split[1] + ".png"
+        camera_file_name = ID_split[0] + "_camera_frontcenter_" + \
+                           ID_split[1] + ".png"
 
         A_camera = cv.imread(os.path.join(ind_camera_dir, camera_file_name))
         pc = np.load(os.path.join(ind_pc_dir, pc_file_name), allow_pickle=True)

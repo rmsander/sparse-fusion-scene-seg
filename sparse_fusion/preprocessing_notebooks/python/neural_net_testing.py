@@ -21,7 +21,7 @@ import pickle
 ################################################################################
 # FLAGS
 USE_CLI = False
-F_CLASS_DICT_PKL = os.path.join("..", "data", "camera_lidar_semantic",
+F_CLASS_DICT_PKL = os.path.join("../../../..", "data", "camera_lidar_semantic",
                                 "class_dictionary.pkl")
 MINI = True
 FULL = False

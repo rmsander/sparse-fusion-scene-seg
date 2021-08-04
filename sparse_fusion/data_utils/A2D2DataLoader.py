@@ -6,13 +6,15 @@ import os
 
 warnings.filterwarnings('ignore')
 
+# Set default target IDs (NOTE; numbers correspond to semantic class)
+TARGET_IDS = [54, 26, 46, 7, 18, 31, 24, 16, 53, 33,
+              19, 37, 15, 13, 41, 3, 10, 22, 6, 42]
 
 # Now let's use this PointNet class
 class A2D2DataLoader(Dataset):
     def __init__(self, dataset, rotation=None,
                  take_subset=False, convert_to_tensor=True,
-                 target_ids=[54, 26, 46, 7, 18, 31, 24, 16, 53, 33, 19,
-                             37, 15, 13, 41, 3, 10, 22, 6, 42]):
+                 target_ids=TARGET_IDS):
 
         # Get IDS
         self.ids = list(dataset.keys())

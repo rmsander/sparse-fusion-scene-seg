@@ -215,8 +215,7 @@ def main(args, stage=None, pretrain_model_path=None, e_init=0, e_final=2):
         logger.info('PARAMETER ...')
         logger.info(args)
     print('Load data...')
-    #train_data, train_label, test_data, test_label = recognize_all_data(test_area = 5)
-    
+
     # Now pickle our dataset
     if USE_CLI:
       f_in = args.data_path
@@ -285,8 +284,7 @@ def main(args, stage=None, pretrain_model_path=None, e_init=0, e_final=2):
     else:
         print('Training from scratch')
         logger.info('Training from scratch')
-    #pretrain_var = pretrain
-    #init_epoch = int(pretrain_var[-14:-11]) if pretrain is not None else 0
+
     init_epoch = e_init
             
     if optimizer == 'SGD':
@@ -329,8 +327,6 @@ def main(args, stage=None, pretrain_model_path=None, e_init=0, e_final=2):
         if USE_CONMAT:
             conf_matrix = torch.zeros(NUM_CLASSES, NUM_CLASSES)
         for points, targets in tqdm(dataloader):
-        #for points, target in tqdm(dataloader):
-            #points, target = data
             points, targets = Variable(points.float()), Variable(targets.long())
             points = points.transpose(2, 1)
             points, targets = points.cuda(), targets.cuda()
@@ -341,7 +337,6 @@ def main(args, stage=None, pretrain_model_path=None, e_init=0, e_final=2):
                 pred, trans_feat = model(points)
             else:
                 pred = model(points[:,:3,:],points[:,3:,:])  # Channels: xyz_norm (first 3) | rgb_norm (second three)
-                #pred = model(points)
             if USE_CONMAT:
                 conf_matrix = confusion_matrix(pred, targets, conf_matrix)
             pred = pred.contiguous().view(-1, num_classes)
@@ -359,8 +354,7 @@ def main(args, stage=None, pretrain_model_path=None, e_init=0, e_final=2):
             optimizer.step()
             counter += 1
             step += 1
-            #if counter > 3:
-            #     break
+
         if USE_CONMAT:
             print("CONFUSION MATRIX: \n {}".format(conf_matrix))
         pointnet2 = model_name == 'pointnet2'

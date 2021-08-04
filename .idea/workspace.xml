@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0223beb-ada8-411e-9a07-a21e0e5e2470" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/AWS_ssh.sh" beforeDir="false" afterPath="$PROJECT_DIR$/env/AWS_ssh.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/data_utils/A2D2DataLoader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/data_utils/ModelNetDataLoader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/data_utils/S3DISDataLoader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/data_utils/ShapeNetDataLoader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/download_data.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/focal_loss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/model/pointnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/model/pointnet2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/model/pointnet_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/pad_collate_fn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/train_clf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/train_partseg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/train_semseg-focal_loss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/train_semseg-transfer_learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/train_semseg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/eulerangles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/example.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/pc_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/plyfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/render_balls_so.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointNet2/visualizer/show3d_balls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audi_dataset_pre_processing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audi_dataset_pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/sparse_fusion/preprocessing_notebooks/python/audi_dataset_pre_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_partitioned_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/sparse_fusion/preprocessing_notebooks/python/create_partitioned_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/env/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images_for_report.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neural_net_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/sparse_fusion/preprocessing_notebooks/python/neural_net_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup_training.ipynb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="42ec9edb-fd65-4ec4-806c-7762584b766c" />
+  <component name="ProjectId" id="1wF2UlDqsQv52z5PeAwpw2TqBX2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/env" />
+      <recent name="$PROJECT_DIR$/sparse_fusion/preprocessing_notebooks/python" />
+      <recent name="$PROJECT_DIR$/sparse_fusion/preprocessing_notebooks/jupyter" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0223beb-ada8-411e-9a07-a21e0e5e2470" name="Default Changelist" comment="" />
+      <created>1628040033442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628040033442</updated>
+      <workItem from="1628040036528" duration="1757000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
