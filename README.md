@@ -72,6 +72,16 @@ from [Charles Qi's PointNet++ PyTorch implementaton](https://github.com/charlesq
 2. `train_semseg-focal_loss.py` (Training code with focal loss.)
 3. `train_semseg-transfer_learning.py` (Training code with self-incremental transfer learning.)
 4. `data_utils/A2D2DataLoader.py` (PyTorch DataLoader class for interfacing with A2D2 dataset.)
+
+## Citation
+If you found these notebooks or scripts helpful, please consider citing my article:
+```
+@article{sandersparse,
+  title={Sparse Data Fusion and Class Imbalance Correction Techniques for Efficient Multi-Class Point Cloud Semantic Segmentation},
+  author={Sander, Ryan}
+}
+```
+If you use the A2D2 dataset and/or the PointNet++ architecture, please remember to cite these papers as well.
  
 ## Acknowledgements
 Thank you to the 6.869 team at MIT for providing me with crucial guidance and AWS resources for this project, 
